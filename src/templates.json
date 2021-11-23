@@ -1,0 +1,132 @@
+[
+  {
+    "id": "logo-personalizada", 
+    "name": "Logo Personalizada",
+    "price": 3.50,
+    "un": 1,
+    
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star-none.svg"],
+    "imageURL": "/templates/logo.svg"
+  },
+  { 
+    "id": "logo-personalizada", 
+    "name": "Logo Personalizada" ,
+    "price": 4.60,
+    "un": 1,
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg"],
+    "imageURL": "/templates/logo1.svg"
+  },
+  { 
+    "id": "logo-personalizada", 
+    "name": "Logo Personalizada" ,
+    "price": 7.80,
+    "un": 1,
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg"],
+    "imageURL": "/templates/logo2.svg"
+  },
+  { 
+    "id": "logo-personalizada", 
+    "name": "Logo Personalizada" ,
+    "price": 4.50,
+    "un": 1,
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg"],
+    "imageURL": "/templates/logo3.svg"
+  },
+  { 
+    "id": "logo-personalizada", 
+    "name": "Logo Personalizada" ,
+    "price": 4.60,
+    "un": 1,
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg"],
+    "imageURL": "/templates/logo4.svg"
+  },
+  { 
+    "id": "logo-personalizada", 
+    "name": "Logo Personalizada" ,
+    "price": 3.50,
+    "un": 1,
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star-none.svg"],
+    "imageURL": "/templates/logo6.svg"
+  },
+  { 
+    "id": "logo-personalizada", 
+    "name": "Logo Personalizada" ,
+    "price": 2.30,
+    "un": 1,
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star-none.svg","/others/star-none.svg"],
+    "imageURL": "/templates/logo7.svg"
+  },
+  { 
+    "id": "banner-personalizado", 
+    "name": "Banner Personalizado" ,
+    "price": 12.30,
+    "un": 1,
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg"],
+    "imageURL": "/templates/banner.svg"
+  },
+  { 
+    "id": "banner-personalizado", 
+    "name": "Banner Personalizado" ,
+    "price": 11.80,
+    "un": 1,
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg"],
+    "imageURL": "/templates/banner1.svg"
+  },
+  { 
+    "id": "banner-personalizado", 
+    "name": "Banner Personalizado" ,
+    "price": 8.50,
+    "un": 1,
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star-none.svg","/others/star-none.svg"],
+    "imageURL": "/templates/banner2.svg"
+  },
+  { 
+    "id": "banner-personalizado", 
+    "name": "Banner Personalizado" ,
+    "price": 10.35,
+    "un": 1,
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star-none.svg"],
+    "imageURL": "/templates/banner3.svg"
+  },
+  { 
+    "id": "banner-personalizado", 
+    "name": "Banner Personalizado" ,
+    "price": 13.40,
+    "un": 1,
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg"],
+    "imageURL": "/templates/banner4.svg"
+  },
+  { 
+    "id": "logo-personalizada", 
+    "name": "Logo Personalizada" ,
+    "price": 3.50,
+    "un": 1,
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star-none.svg"],
+    "imageURL": "/templates/logo8.svg"
+  },
+  { 
+    "id": "banner-personalizado", 
+    "name": "Banner Personalizado" ,
+    "price": 9.80,
+    "un": 1,
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star-none.svg"],
+    "imageURL": "/templates/banner5.svg"
+  },
+  { 
+    "id": "logo-personalizada", 
+    "name": "Logo Personalizada" ,
+    "price": 12.90,
+    "un": 1,
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg"],
+    "imageURL": "/templates/logo6.svg"
+  },
+  { 
+    "id": "logo-personalizada", 
+    "name": "Logo Personalizada" ,
+    "price": 3.50,
+    "un": 1,
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star-none.svg"],
+    "imageURL": "/templates/logo10.svg"
+  }
+  
+]

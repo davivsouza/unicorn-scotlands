@@ -1,0 +1,133 @@
+.container{
+  margin-top: 60px ;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  align-items: center;
+  background: #fff;
+  
+  @media screen and(max-width:768px) {
+    margin-top: 0;
+  }
+
+  @media screen and(max-width:425px) {
+    background: #413F62;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ImgContainer{
+    text-align: center;
+    
+    img{
+      width: 450px;
+    
+      @media screen and(max-width:768px) {
+        margin-top: 0;
+        max-width: 300px;
+      }
+
+      @media screen and(max-width:425px) {
+        display: none;
+      }
+    }
+
+    h1{
+      font-family: Coiny, sans-serif;
+      font-size: 40px;
+
+      margin-bottom: 20px;
+      background: -webkit-linear-gradient(#7331CE, #B937C9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @media screen and(max-width:768px) {
+        font-size: 30px;
+
+      }
+
+      @media screen and(max-width:425px) {
+        width: 250px;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .Form{
+    height: 100vh;
+    width: 100%;
+    background: #413F62;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and(max-width:425px) {
+      height: 100%;
+    }
+   
+    form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      input{
+        width: 400px;
+        border-radius: 20px;
+        padding: 0.8rem;
+        font-family: Sen, sans-serif;
+        font-size: 1rem;
+        background: #8884BC;
+        border: 1px solid #000;
+        outline: none;
+        margin-bottom: 20px;
+        color: #D8D4FF;
+        &::placeholder{
+          color: #D8D4FF;
+        }
+
+        @media screen and(max-width:768px) {
+          width: 300px;
+        }
+
+        @media screen and(max-width:425px) {
+          width: 250px;
+        }
+      }
+
+
+      textarea{
+        resize: none;
+        outline: none;
+        width: 400px;
+
+        padding: 0.8rem;
+        border: 1px solid #000;
+        border-radius: 20px;
+        background: #8884BC;
+        font-family: Sen, sans-serif;
+        font-size: 1rem;
+        color: #D8D4FF;
+        &::placeholder{
+          color: #D8D4FF;
+        }
+
+        @media screen and(max-width:768px) {
+          width: 300px;
+        }
+
+        @media screen and(max-width:425px) {
+          width: 250px;
+        }
+      }
+
+      button{
+        width: 200px;
+        align-self: left;
+      }
+      
+    }
+  }
+  
+
+}

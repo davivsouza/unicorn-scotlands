@@ -1,0 +1,36 @@
+.stylingExample {
+  max-width: 100%;
+  margin: auto;
+
+  .rec.rec-arrow {
+    background: none;
+    color: #7331ce;
+    box-shadow: none;
+  }
+
+  .rec.rec-arrow:disabled {
+    visibility: hidden;
+  }
+  .rec.rec-arrow:hover {
+    background: none;
+    box-shadow: none;
+    color: #b937c9;
+  }
+
+  .rec.rec-arrow:focus {
+    background: none;
+    box-shadow: none;
+    color: #b937c9;
+  }
+  .rec.rec-arrow:active {
+    background: none;
+    box-shadow: none;
+    color: #b937c9;
+  }
+
+  .rec.rec-dot {
+    display: none;
+    background: #b937c9;
+    outline: none;
+  }
+}

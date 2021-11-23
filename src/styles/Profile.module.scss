@@ -1,0 +1,133 @@
+.container {
+  margin-top: 60px;
+}
+
+.profileContent {
+  max-width: 100%;
+  margin: 100px auto 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 100px;
+}
+
+aside {
+  max-width: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  line-height: 1.5;
+  font-family: Sen, sans-serif;
+  padding: 0.8rem;
+  h1 {
+    color: #fff;
+  }
+  strong {
+    display: inline;
+    font-size: 1.15rem;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    color: #fff;
+    &:hover {
+      text-decoration: underline;
+      color: #b937c9;
+    }
+  }
+  
+  button {
+    width: 90%;
+    padding: 0.3rem;
+    border-radius: 10px;
+    border: none;
+    background: #232835;
+    font-size: 1rem;
+    font-family: Sen, sans-serif;
+    color: #da1812;
+    cursor: pointer;
+
+    
+  }
+}
+
+.accountInformation {
+  display: flex;
+  flex-direction: column;
+  padding: 90px;
+  width: 50%;
+  margin: auto;
+  height: 50vh;
+  background: #2c3242;
+  border-radius: 10px;
+  line-height: 1.5;
+  strong {
+    font-family: Sen, sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  p {
+    font-family: Sen, sans-serif;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 30px;
+  }
+
+  .avatarSettings {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+    button {
+      width: 90px;
+      padding: 0.3rem;
+      border-radius: 10px;
+      border: none;
+      font-size: 1rem;
+      font-family: Sen, sans-serif;
+      background: #232835;
+      color: #fff;
+      cursor: pointer;
+
+      &.sendBtn {
+        color: #b937c9;
+      }
+    }
+
+    img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+  }
+}
+
+.accountData {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 50px;
+  margin-top: 10px;
+  label {
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+    font-family: Sen, sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    color: #fff;
+
+    input {
+      width: 90%;
+      padding: 15px 20px;
+      border-radius: 10px;
+      background: #232835;
+      border: none;
+      outline: none;
+      cursor: default;
+      margin-bottom: 10px;
+      &::placeholder {
+        color: #fff;
+        font-family: Sen, sans-serif;
+      }
+    }
+  }
+}

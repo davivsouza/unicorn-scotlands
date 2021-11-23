@@ -1,0 +1,41 @@
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #161A23;
+  
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 111;
+}
+img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.astronautContainer{
+  width: 200px;
+  background: #fff;
+  height: 200px;
+  margin-right: 0.8rem;
+}
+
+
+svg{
+  width: 70%;
+  height: 70%;
+}
+
+.lottie{
+  pointer-events: none;
+}

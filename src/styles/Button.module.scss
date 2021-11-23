@@ -1,0 +1,22 @@
+.buttonComponent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button{
+    width: 60%;
+    cursor: pointer;
+    margin: 1.5rem 0;
+    text-align: center;
+    padding: 0.4rem;
+    font-family: Sen, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(90deg, #b937c9 5.45%, #7331ce 91.82%);
+    border-radius: 40px;
+    border: none;
+    outline: none;
+  }
+  
+
+}

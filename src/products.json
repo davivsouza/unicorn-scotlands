@@ -1,0 +1,84 @@
+[
+  {
+    "id": "camisas-personalizadas", 
+    "name": "Camisas Personalizadas",
+    "price": 66.00,
+    "un": 1,
+    "description": ["Ajusta ao Corpo", "Tecido de Qualidade", "Nao Precisa Passar"],
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg"],
+    "imageURL": "/produtos/camiseta.svg"
+  },
+  { 
+    "id": "moletons-personalizados", 
+    "name": "Moletons Personalizados" ,
+    "price": 20.90,
+    "un": 1,
+    "description": ["Ajusta ao corpo", "Tecido de Qualidade", "Confortável"],
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg"],
+    "imageURL": "/produtos/moletom.svg"
+  },
+  { 
+    "id": "mascaras-personalizadas", 
+    "name": "Máscaras Personalizadas" ,
+    "price": 1.99,
+    "un": 1,
+    "description": ["Confortável", "Tecido de Qualidade", "Ótima Economia"],
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg"],
+    "imageURL": "/produtos/mascara.svg"
+  },
+  { 
+    "id": "poster-personalizado", 
+    "name": "Poster Personalizado" ,
+    "price": 34.90,
+    "un": 1,
+    "description": ["Confortável", "Tecido de Qualidade", "Ótima Economia"],
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star-none.svg","/others/star-none.svg"],
+    "imageURL": "/produtos/poster.svg"
+  },
+  { 
+    "id": "caneca-personalizada", 
+    "name": "Caneca Personalizada" ,
+    "price": 33.00,
+    "un": 1,
+    "description": ["Confortável", "Tecido de Qualidade", "Ótima Economia"],
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg"],
+    "imageURL": "/produtos/caneca.svg"
+  },
+  { 
+    "id": "quadro-personalizado", 
+    "name": "Quadro Personalizado" ,
+    "price": 29.90,
+    "un": 1,
+    "description": ["Confortável", "Tecido de Qualidade", "Ótima Economia"],
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star-none.svg"],
+    "imageURL": "/produtos/quadro.svg"
+  },
+  { 
+    "id": "cartao-personalizado", 
+    "name": "Cartão Personalizado" ,
+    "price": 45.00,
+    "un": 10,
+    "description": ["Confortável", "Tecido de Qualidade", "Ótima Economia"],
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg"],
+    "imageURL": "/produtos/cartao.svg"
+  },
+  { 
+    "id": "pasta-personalizada", 
+    "name": "Pasta Personalizada" ,
+    "price": 77.99,
+    "un": 10,
+    "description": ["Confortável", "Tecido de Qualidade", "Ótima Economia"],
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star-none.svg"],
+    "imageURL": "/produtos/folder.svg"
+  },
+  { 
+    "id": "livro-personalizado", 
+    "name": "Livro Personalizado" ,
+    "price": 65.80,
+    "un": 1,
+    "description": ["Confortável", "Tecido de Qualidade", "Ótima Economia"],
+    "avaliation":["/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg","/others/star.svg"],
+    "imageURL": "/produtos/livro.svg"
+  }
+  
+]
