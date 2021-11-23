@@ -71,11 +71,11 @@ export function Carrinho() {
                 <strong>Resumo do pedido</strong>
                 <div>
                   <strong>Produtos </strong>
-                  <p>R$ {parseFloat(subtotalPrice.length !== 0 && subtotalPrice.reduce((total, currentElement) => total + currentElement)).toFixed(2)}</p>
+                  <p>R$ 250.00p>
                   <strong>Frete: </strong>
                   <p>Frete Grátis</p>
                 </div>
-                <strong>Total: <p>R$ {parseFloat(subtotalPrice.length !== 0 && subtotalPrice.reduce((total, currentElement) => total + currentElement)).toFixed(2)}</p></strong>
+                <strong>Total: <p>R$ 250.00</p></strong>
 
                 <Link to="/pagamento">
                   <motion.button
