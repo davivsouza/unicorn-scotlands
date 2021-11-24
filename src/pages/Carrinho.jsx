@@ -71,7 +71,7 @@ export function Carrinho() {
                 <strong>Resumo do pedido</strong>
                 <div>
                   <strong>Produtos </strong>
-                  <p>R$ 250.00p>
+                  <p>R$ 250.00</p>
                   <strong>Frete: </strong>
                   <p>Frete Grátis</p>
                 </div>
