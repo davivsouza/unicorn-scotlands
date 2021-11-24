@@ -53,7 +53,10 @@ export function Home() {
 
             >
 
-              Explorar o desconhecido
+               <Link to ="/produtos">
+                  Explorar o desconhecido
+                </Link>
+              
             </motion.button>
           </div>
 
