@@ -41,20 +41,25 @@ export function Home() {
             >
               A criatividade está no modo de como você enxerga a realidade ao seu redor.
             </motion.p>
-            <motion.button
+            <Link to="/produtos">
 
-              whileHover={{ scale: 1.05 }}
-              whileTap={{
-                scale: 0.95,
-              }}
+              <motion.button
 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, transition: { duration: 1.5, type: "spring", bounce: 0.3 } }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{
+                  scale: 0.95,
+                }}
 
-            >
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1, transition: { duration: 1.5, type: "spring", bounce: 0.3 } }}
 
-              Explorar o desconhecido
-            </motion.button>
+              >
+
+                Explorar o desconhecido
+
+              </motion.button>
+            </Link>
+
           </div>
 
           <div className={style.medias}>
@@ -89,8 +94,8 @@ export function Home() {
                 <p>R$ {parseFloat(product.price).toFixed(2)} <span>/un</span> </p>
               </div>
               <Link to={`/produtos/${product.id}`}>
-                  <Buy>Comprar</Buy>
-                </Link>
+                <Buy>Comprar</Buy>
+              </Link>
             </div>
           ))}
         </motion.div >
@@ -115,44 +120,44 @@ export function Home() {
                 Template é um modelo pré-moldado que pode ser
                 adaptado para diversos usos, colocando sua logo, as suas cores e mudando as formas.
               </p>
-              
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{
-                    scale: 0.95,
-                  }}
-                  onClick={()=>{
-                    window.location="/nossa-arte"
-                  }}
-                  >
-                    
-                    Ver mais
-                  
-                </motion.button>
-              
+
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{
+                  scale: 0.95,
+                }}
+                onClick={() => {
+                  window.location = "/nossa-arte"
+                }}
+              >
+
+                Ver mais
+
+              </motion.button>
+
             </div>
           </div>
           <div className={style.templatesImg}>
-            <Carousel  breakPoints={breakPoints} itemPadding={[0,10]}  itemsToScroll={4} className="stylingExample">
-                <Item>
-                  <img src="/templates/banner.svg" alt="" />
-                </Item>
-                <Item>
-                  <img src="/templates/banner1.svg" alt="" />
-                </Item>
-                <Item>
-                  <img src="/templates/banner2.svg" alt="" />
-                </Item>
-                <Item>
-                  <img src="/templates/banner3.svg" alt="" />
-                </Item>
-                <Item>
-                  <img src="/templates/banner4.svg" alt="" />
-                </Item>
-                <Item>
-                  <img src="/templates/logo.svg" alt="" />
-                </Item>
-              
+            <Carousel breakPoints={breakPoints} itemPadding={[0, 10]} itemsToScroll={4} className="stylingExample">
+              <Item>
+                <img src="/templates/banner.svg" alt="" />
+              </Item>
+              <Item>
+                <img src="/templates/banner1.svg" alt="" />
+              </Item>
+              <Item>
+                <img src="/templates/banner2.svg" alt="" />
+              </Item>
+              <Item>
+                <img src="/templates/banner3.svg" alt="" />
+              </Item>
+              <Item>
+                <img src="/templates/banner4.svg" alt="" />
+              </Item>
+              <Item>
+                <img src="/templates/logo.svg" alt="" />
+              </Item>
+
             </Carousel>
           </div>
         </div>

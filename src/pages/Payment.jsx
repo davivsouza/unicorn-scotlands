@@ -174,11 +174,11 @@ export function Payment() {
                   <strong>Resumo do Pedido</strong>
                   <div className={style.resumoPedido}>
                     <p>Subtotal do(s) item(ns): </p>
-                    <p>R$ {subTotal}</p>
+                    <p>R$ 250.00</p>
                     <p>Frete: </p>
                     <p>Frete Grátis</p>
                     <p>Total: </p>
-                    <p>R$ {subTotal} </p>
+                    <p>R$ 250.00 </p>
                   </div>
 
                 </div>
