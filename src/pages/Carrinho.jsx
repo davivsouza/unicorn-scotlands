@@ -81,19 +81,11 @@ export function Carrinho() {
                 <strong>Resumo do pedido</strong>
                 <div>
                   <strong>Produtos </strong>
-<<<<<<< HEAD
                   <p>R$ {parseFloat(price.reduce((total, currentElement) => total += currentElement)).toFixed(2)}</p>
                   <strong>Frete: </strong>
                   <p>Frete Grátis</p>
                 </div>
                 <strong>Total: <p>R$ {parseFloat(price.reduce((total, currentElement) => total += currentElement)).toFixed(2)}</p></strong>
-=======
-                  <p>R$ 250.00</p>
-                  <strong>Frete: </strong>
-                  <p>Frete Grátis</p>
-                </div>
-                <strong>Total: <p>R$ 250.00</p></strong>
->>>>>>> 1f694a4374aa8db7f8dd3eefb689a6d1b1c8da92
 
                 <Link to="/pagamento">
                   <motion.button
