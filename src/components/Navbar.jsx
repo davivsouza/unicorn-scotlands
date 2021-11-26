@@ -58,10 +58,7 @@ export function Navbar() {
         </ul>
         <ul className="clientSide">
           <li><Link to='/minha-conta'>Minha conta</Link></li>
-          <Link to="/carrinho">
-            <img src="/bag.svg" alt="Sacola de produtos" className="bagShop" />
 
-          </Link>
         </ul>
 
 
@@ -85,16 +82,17 @@ export function Navbar() {
           </ul>
           <ul className={isOpenMenu == "open" ? "clientSide open" : "clientSide"}>
             <li><Link to='/minha-conta'>Minha conta</Link></li>
-            <Link to="/carrinho">
-              <img src="/bag.svg" alt="Sacola de produtos" className="bagShop" />
-
-            </Link>
           </ul>
+          
         </motion.div>
 
 
+        <Link to="/carrinho">
+            <img src="/bag.svg" alt="Sacola de produtos" className="bagShop" />
 
+          </Link>
       </nav>
+
     </motion.header>
 
 

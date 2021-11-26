@@ -13,6 +13,10 @@
   position: relative;
   padding: 2.5rem 0;
 
+  @media screen and (min-width:1400px){
+    background-size: 900px;
+  }
+
   @media screen and(max-width:950px) {
     background-image: none;
     flex-direction: column;
@@ -35,7 +39,7 @@
 
   .sloganText {
     margin-bottom: 5rem;
-
+    
     @media screen and (max-width: 1000px) {
       h1 {
         text-align: center;
@@ -45,6 +49,8 @@
         text-align: center;
         font-size: 1rem;
         width: 100%;
+
+        
       }
     }
   }
@@ -52,10 +58,12 @@
   h1 {
     font-family: Sen, sans-serif;
     color: #ff93ff;
+    width: 80%;
+
   }
 
   p {
-    width: 90%;
+    width: 80%;
     text-align: left;
     color: #fff;
     font-size: 1.2rem;

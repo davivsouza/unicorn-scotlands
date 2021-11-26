@@ -95,6 +95,7 @@ export function BuyProduct() {
                         name: produto.name,
                         quant: cont,
                         price: produto.price * cont,
+                        normalPrice: produto.price,
                         imageURL: produto.imageURL
                       }
 

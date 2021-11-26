@@ -24,6 +24,10 @@
   justify-content: center;
   gap: 20px;
 
+  @media screen and (max-width:768px) {
+    flex-direction: column;
+  }
+  
   .totalPrice {
     display: flex;
     flex-direction: column;
@@ -32,7 +36,10 @@
     background: #283043;
     width: 300px;
     height: 350px;
-
+    @media screen and (max-width:425px) {
+      width: 100%;
+      
+    }
     strong {
       display: flex;
       align-items: center;
@@ -84,6 +91,7 @@
 .carrinhoContent {
   margin: 100px auto;
   .bagShop {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,15 +100,39 @@
     background: #283043;
     padding: 2px 80px;
     margin-bottom: 20px;
+    @media screen and (max-width:425px) {
+      max-width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+      gap: 0px;
+      padding: 10px;
+      
+    }
+    
     img {
       width: 100px;
       height: 100px;
       border-radius: 10px;
+
+      @media screen and (max-width:425px) {
+       max-width: 80px;
+       grid-column: 1;
+        
+      }
     }
 
     p {
       font-family: Sen, sans-serif;
       color: #fff;
+      
+
+      &.namePrd{
+        @media screen and (max-width:425px) {
+          font-size: 0.8rem;
+          grid-column: 2/4;
+         }
+      }
     }
 
     select {
@@ -141,11 +173,23 @@
     .price {
       width: 100px;
       font-size: 1rem;
+      @media screen and (max-width:425px) {
+        max-width: 30px;
+        font-size: 0.8rem;
+         
+       }
     }
 
     .delete {
       width: 30px;
       cursor: pointer;
+      @media screen and (max-width:425px) {
+        max-width: 20px;
+        font-size: 0.8rem;
+        position: absolute;
+        top: -20px;
+        right: 10px;
+       }
     }
   }
 }

@@ -1,26 +1,21 @@
 import style from '../styles/Carrinho.module.scss'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useLayoutEffect} from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 export function Carrinho() {
   const [carrinho, setCarrinho] = useState([])
   const [quant, setQuant] = useState(0)
-  const [subtotalPrice, setSubTotalPrice] = useState([])
   let price = []
-
+  carrinho.forEach(item => {
+    price.push(parseFloat(item.price))
+  })
   useEffect(() => {
     if (localStorage.getItem('bagShop')) {
       setCarrinho(JSON.parse(localStorage.getItem('bagShop')))
-
     }
-    carrinho.forEach(item => {
-      price.push(item.price)
-      setSubTotalPrice([...price])
+    
+  }, [carrinho])
 
-    })
-  }, [subtotalPrice])
-
-  console.log(subtotalPrice);
 
   return (
     <>
@@ -39,7 +34,7 @@ export function Carrinho() {
                 {carrinho.map((bag, idx) => (
                   <div className={style.bagShop} key={idx}>
                     <img src={bag.imageURL} alt={bag.name} />
-                    <p>{bag.name}</p>
+                    <p className={style.namePrd}>{bag.name}</p>
                     <select name="" id="">
                       <option value="">P</option>
                       <option value="">M</option>
@@ -48,19 +43,34 @@ export function Carrinho() {
                     <div className={style.quant}>
                       <p>{bag.quant}</p>
                       <div>
-                        <img src="/others/mais.svg" alt="Mais" />
-                        <img src="/others/menos.svg" alt="Menos" />
+                        <img src="/others/mais.svg" alt="Mais" onClick={()=>{
+                          carrinho[idx].quant = bag.quant+=1
+                          carrinho[idx].price = parseFloat(bag.normalPrice*bag.quant).toFixed(2)
+                          console.log(price);
+                          localStorage.setItem('bagShop', JSON.stringify(carrinho))
+                        }}/>
+                        <img src="/others/menos.svg" alt="Menos" onClick={()=>{
+                          if(bag.quant!=1){
+                            carrinho[idx].quant = bag.quant-=1
+                            carrinho[idx].price = parseFloat(bag.normalPrice*bag.quant).toFixed(2)
+                            localStorage.setItem('bagShop', JSON.stringify(carrinho))
+                          }
+                          
+                        }}/>
 
                       </div>
                     </div>
                     <p className={style.price}>
-                      R$ {parseFloat(bag.price).toFixed(2)}
+                      R$ {parseFloat(bag.normalPrice * bag.quant).toFixed(2)}
                     </p>
                     <img src="/others/excluir.svg" alt="Delete" className={style.delete}
-                    // onClick={()=>{
-                    //   // let newCarrinho = carrinho.splice(idx,1)
-                    //   // localStorage.setItem('bagShop', JSON.stringify(newCarrinho))
-                    // }}
+                    onClick={()=>{
+                      let newCarrinho = carrinho.indexOf(idx)
+                      if(newCarrinho){
+                        carrinho.splice(newCarrinho, 1)
+                      }
+                      localStorage.setItem('bagShop', JSON.stringify(carrinho))
+                    }}
                     />
                     {/* splice - removes from a specific Array index. */}
                   </div>
@@ -71,11 +81,11 @@ export function Carrinho() {
                 <strong>Resumo do pedido</strong>
                 <div>
                   <strong>Produtos </strong>
-                  <p>R$ {parseFloat(subtotalPrice.length !== 0 && subtotalPrice.reduce((total, currentElement) => total + currentElement)).toFixed(2)}</p>
+                  <p>R$ {parseFloat(price.reduce((total, currentElement) => total += currentElement)).toFixed(2)}</p>
                   <strong>Frete: </strong>
                   <p>Frete Grátis</p>
                 </div>
-                <strong>Total: <p>R$ {parseFloat(subtotalPrice.length !== 0 && subtotalPrice.reduce((total, currentElement) => total + currentElement)).toFixed(2)}</p></strong>
+                <strong>Total: <p>R$ {parseFloat(price.reduce((total, currentElement) => total += currentElement)).toFixed(2)}</p></strong>
 
                 <Link to="/pagamento">
                   <motion.button
@@ -85,7 +95,7 @@ export function Carrinho() {
                     }}
 
                     onClick={()=>{
-                      localStorage.setItem('subTotal', subtotalPrice.length !== 0 && subtotalPrice.reduce((total, currentElement) => total + currentElement))
+                      localStorage.setItem('subTotal', price.reduce((total, currentElement) => total += currentElement))
                     }}
                   >
 

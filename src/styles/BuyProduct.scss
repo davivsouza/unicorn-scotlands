@@ -12,7 +12,7 @@
     border-radius: 20px;
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
     img {
@@ -193,6 +193,10 @@
     .div-flex {
       display: flex;
       gap: 0.8rem;
+
+      @media screen and (max-width:425px) {
+        flex-direction: column;
+      }
     }
   }
 }
