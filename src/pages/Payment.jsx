@@ -1,7 +1,8 @@
 import style from '../styles/Payment.module.scss'
 import { useState, useEffect } from 'react'
-
+import {useNavigate} from 'react-router-dom'
 export function Payment() {
+  const navigate = useNavigate()
   const [paymentStatus, setPaymentStatus] = useState('address')
   const [carrinho, setCarrinho] = useState([])
   const [subTotal, setSubtotal] = useState(0)
@@ -209,7 +210,7 @@ export function Payment() {
               </div>
 
               <button onClick={() => {
-                window.location = "/"
+                navigate('/', {replace:true})
               }}>
                 Sair
               </button>

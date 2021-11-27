@@ -3,11 +3,18 @@
 }
 
 .profileContent {
+  position: relative;
   max-width: 100%;
   margin: 100px auto 0;
   display: flex;
   justify-content: space-between;
   padding: 10px 100px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 5px;
+  }
 }
 
 aside {
@@ -18,6 +25,11 @@ aside {
   line-height: 1.5;
   font-family: Sen, sans-serif;
   padding: 0.8rem;
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+  }
+
   h1 {
     color: #fff;
   }
@@ -32,9 +44,9 @@ aside {
       color: #b937c9;
     }
   }
-  
+
   button {
-    width: 90%;
+    width: 200px;
     padding: 0.3rem;
     border-radius: 10px;
     border: none;
@@ -44,7 +56,11 @@ aside {
     color: #da1812;
     cursor: pointer;
 
-    
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      top: -5%;
+      right: 16%;
+    }
   }
 }
 
@@ -53,11 +69,17 @@ aside {
   flex-direction: column;
   padding: 90px;
   width: 50%;
-  margin: auto;
   height: 50vh;
   background: #2c3242;
   border-radius: 10px;
   line-height: 1.5;
+
+  @media screen and (max-width: 768px) {
+    width: 50%;
+    height: 100%;
+    padding: 70px;
+  }
+
   strong {
     font-family: Sen, sans-serif;
     font-size: 1.5rem;
@@ -76,6 +98,12 @@ aside {
     align-items: center;
     gap: 10px;
     margin-top: 12px;
+
+    @media screen and (max-width:320px ) {
+      flex-direction: column;
+    }
+  
+
     button {
       width: 90px;
       padding: 0.3rem;
@@ -106,6 +134,14 @@ aside {
   align-items: center;
   column-gap: 50px;
   margin-top: 10px;
+
+  @media screen and (max-width: 425px) {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding: 5px;
+  }
   label {
     display: flex;
     flex-direction: column;

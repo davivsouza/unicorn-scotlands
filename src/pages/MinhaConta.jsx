@@ -1,11 +1,11 @@
 import style from '../styles/MinhaConta.module.scss'
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate} from 'react-router-dom'
 
 import { useState, useEffect } from 'react'
 import { Profile } from '../components/Profile'
 export function MinhaConta() {
-
+const navigate = useNavigate()
   const [account, setAccount] = useState({})
   const [hasAccount, setHasAccount] = useState(false)
   const [name, setName] = useState(null)

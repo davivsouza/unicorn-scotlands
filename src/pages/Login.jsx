@@ -1,11 +1,11 @@
 import style from '../styles/Login.module.scss'
 import { Buy } from '../components/Button'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
-export function Login() {
-
+export function Login({history}) {
+  const navigate = useNavigate()
   const [account, setAccount] = useState({})
   const [email, setEmail] = useState(null)
   const [senha, setSenha] = useState(null)
@@ -47,6 +47,7 @@ export function Login() {
 
                 } else {
                   alert('Senha ou Email errados')
+                  navigate('/login')
                 }
               }}
 
