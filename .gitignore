@@ -24,6 +24,6 @@ yarn-error.log*
 
 
 #jsons
-/src/animation.json
-/src/products.json
-/src/templates.json
+./src/animation.json
+./src/products.json
+./src/templates.json
