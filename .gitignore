@@ -22,8 +22,3 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-
-#jsons
-./src/animation.json
-./src/products.json
-./src/templates.json
